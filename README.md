@@ -37,7 +37,7 @@ Also, while deploying on these platforms, copy paste the environment variables f
 # References
 [buildspace](https://buildspace.so/)  
 
-[hackmd]](https://hackmd.io/@levicook/HJcDneEWF)  
+[hackmd](https://hackmd.io/@levicook/HJcDneEWF)  
 
 [metaplex](https://docs.metaplex.com/create-candy/introduction)  
 
