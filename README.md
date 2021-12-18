@@ -12,7 +12,7 @@ Before running the script, install the following dependency
 * [ts-node](https://www.npmjs.com/package/ts-node#installation)
 
 # Assets
-Before uploading, create a directory named 'assets' in the root of the repo and copy the assets you want to be NFT to the 'assets' directory
+Before uploading, create a directory named 'assets' in the root of the repo and copy the assets you want to be NFT to the 'assets' directory. 
 
 PS: The assets for now can only be .png images
 
@@ -35,7 +35,10 @@ To be able to deploy the app on hosting platforms like vercel or netlify, you ha
 Also, while deploying on these platforms, copy paste the environment variables from .env file in the app directory. 
 
 # References
-[buildspace](https://buildspace.so/)
-[hackmd]](https://hackmd.io/@levicook/HJcDneEWF)
-[metaplex](https://docs.metaplex.com/create-candy/introduction)
+[buildspace](https://buildspace.so/)  
+
+[hackmd]](https://hackmd.io/@levicook/HJcDneEWF)  
+
+[metaplex](https://docs.metaplex.com/create-candy/introduction)  
+
 [solana](https://github.com/solana-labs/solana)
