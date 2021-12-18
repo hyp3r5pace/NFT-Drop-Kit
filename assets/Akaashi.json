@@ -1,0 +1,19 @@
+{
+    "name": "Akaashi",
+    "symbol": "",
+    "image": "Akaashi.png",
+    "properties": {
+        "files": [
+            {
+                "uri": "Akaashi.png",
+                "type": "image/png"
+            }
+        ],
+        "creators": [
+            {
+                "address": "49uSc1A5RrUjuCjEZSPuAd95XpGjTaDAdtpFTEpkC3iZ",
+                "share": 100
+            }
+        ]
+    }
+}

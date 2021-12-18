@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+
+import scripts.installPrereq as installPrereq
+import scripts.solanaCLI.installSolana as installSolana
+import scripts.solanaCLI.solanaConfig as solanaConfig
+import scripts.metaplexCLI.installMetaplexCLI as installMetaplexCLI
+import scripts.prepareAssets.createJSON as createJSON
+import scripts.prepareAssets.createWallet as createWallet
+import scripts.walletBalance.getAirdrop as getAirdrop
+import scripts.deployAssets.setAddress as setAddress
+import scripts.deployAssets.uploadAssets as uploadAssets
+import scripts.deployCandyMachine.deployCandyMachine as deployCandyMachine
+import scripts.configCandyMachine.setDropDate as setDropDate
+import scripts.setEnvironment.setEnvironmentVariables as setEnvironVariables
+import scripts.installAppDependency.installAppDependency as installAppDependency
+import scripts.cleanUp.cleanUp as cleanUp
+
+# installation and checking
+installPrereq.main()
+installSolana.main()
+solanaConfig.main()
+installMetaplexCLI.main()
+
+# preparing assets for deploying
+createJSON.main()
+
+#setting up config for candy machine and uploading assets to arweave (decentralized storage)
+createWallet.main()
+
+# get airdrop if user wants
+getAirdrop.main()
+
+# set address to json file of assets
+setAddress.main()
+
+# upload the assets to arweave and deploy config file for candymachine on chain
+uploadAssets.main()
+
+# deploy candy machine on chain
+deployCandyMachine.main()
+
+# set drop date of candy machine
+setDropDate.main()
+
+# set environment variable for react app
+setEnvironVariables.main()
+
+#clean up message
+cleanUp.main()
