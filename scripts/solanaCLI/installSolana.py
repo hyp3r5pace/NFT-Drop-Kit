@@ -29,9 +29,8 @@ def main():
         
         os.chmod('solana', 0b111101101)
         output = subprocess.Popen(['./solana'], stdout=subprocess.PIPE)
-        path_command = output.communicate()[0].decode('utf-8').split('\n')[3].strip()
-        path = path_command.split('=')[1].split(':')[0][1:]
         # for the first time installation, writing the path to solana CLI bin .path file
+        path = os.path.expanduser("~")+'/.local/share/solana/install/active_release/bin'
         with open('.path', 'w') as f:
             f.write(path)
         
